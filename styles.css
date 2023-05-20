@@ -1,0 +1,51 @@
+#leia-mais-progresso-barra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: <?php echo esc_attr( get_option( 'leia_mais_progresso_bar_height', 5 ) ); ?>px;
+    background-color: <?php echo esc_attr( get_option( 'leia_mais_progresso_bar_background_color', '#eaeaea' ) ); ?>;
+    z-index: 9999;
+    transition: width 0.3s ease;
+}
+
+.leia-mais-progresso-botao {
+    margin-bottom: 20px;
+}
+
+.leia-mais-progresso-toggle {
+    background-color: <?php echo esc_attr( get_option( 'leia_mais_progresso_button_color', '#000000' ) ); ?>;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leia-mais-progresso-toggle:hover {
+    background-color: <?php echo esc_attr( get_option( 'leia_mais_progresso_button_hover_color', '#ff0000' ) ); ?>;
+}
+
+.leia-mais-progresso-conteudo {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.leia-mais-progresso-conteudo.visible {
+    display: block;
+}
+
+.leia-mais-progresso-menu-button {
+    background-color: <?php echo esc_attr( get_option( 'leia_mais_progresso_button_color', '#000000' ) ); ?>;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leia-mais-progresso-menu-button:hover {
+    background-color: <?php echo esc_attr( get_option( 'leia_mais_progresso_button_hover_color', '#ff0000' ) ); ?>;
+}
